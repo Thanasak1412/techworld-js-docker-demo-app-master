@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo 'deploying the application...'
 
-                withCredentials([usernamePassword(credentials: 'server-user', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
+                withCredentials([usernamePassword(credentials: 'js-demo-jenkins', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
                     echo "executing some command user: ${USER} password: ${PWD}"
                 }
             }
