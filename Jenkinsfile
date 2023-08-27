@@ -5,16 +5,11 @@ pipeline {
         NEW_VERSION = '1.3.0'
     }
 
-    tools {
-        nodejs 'NodeJS-10.0.0'
-    }
-
     stages {
         stage("build") {
             steps {
                 echo 'building the application...'
                 echo "building version ${NEW_VERSION}"
-                sh 'yarn build'
             }
         }
 
