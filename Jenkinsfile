@@ -6,7 +6,7 @@ pipeline {
     }
 
     parameters{
-        choice(name: 'DEPLOY_VERSION', choies: ['1.1.0', '1.1.1', '1.1.2'], description: 'Version to deploying')
+        choice(name: 'DEPLOY_VERSION', choices: ['1.1.0', '1.1.1', '1.1.2'], description: 'Version to deploying')
         booleanParam(name: 'executeTest', defaultValue: true, description: 'Execute test job')
     }
 
